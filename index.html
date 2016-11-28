@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Take a Trip</title>
+    <link rel="stylesheet" href="./foundation"/>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <button class = "expanded button" id = "load"> Search Trips </button>
+    <section class = "reveal" id = "details" data-reveal>
+      <h3 id = "name"></h1>
+      <h4>Continent: </h4><p id = "continent"></p>
+      <h4>Category: </h4><p id = "category"></p>
+      <h4 id = "weeks"></h4><h4> Week(s)</h4>
+      <h4>Cost</h4><p id = "cost"></p>
+      <h5>Trip ID Number: </h4><p id = "tripid"></p>
+
+      <form action="" method="POST">
+        <input type="hidden" name="id" id="id" value="" />
+        <label>Name<input type = "text" name="name" placeholder="Justin Bieber" /></label>
+        <label>Age<input type = "text" name="age" placeholder="22" /></label>
+        <label>Email<input type = "text" name="email" placeholder="imma@belieber.com" /></label>
+      <button class="button" type="submit"> Reserve </button>
+
+      </form>
+    </section>
+
+    <main id="trips"> </main>
+
+
+
+
+
+    <p><a data-open="exampleModal2">Click me for a modal</a></p>
+
+<!-- This is the first modal -->
+<div class="reveal" id="exampleModal2" data-reveal>
+  <h1>Awesome!</h1>
+  <p class="lead">I have another modal inside of me!</p>
+  <a class="button" data-open="exampleModal3">Click me for another modal!</a>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- This is the nested modal -->
+<div class="reveal" id="exampleModal3" data-reveal>
+  <h2>ANOTHER MODAL!!!</h2>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+  </body>
+</html>
+
+<script type = "text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script></script>
+<script type = "text/javascript" src="scripts.js"></script>
+
+<!-- id, name, destination, continent, about, category, weeks and cost -->
